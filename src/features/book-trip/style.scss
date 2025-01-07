@@ -1,0 +1,123 @@
+.book_trip {
+  margin-top: 40px;
+  background: #fff;
+
+  padding: 40px 0 0 0;
+
+  h3 {
+    display: block;
+    text-align: center;
+
+    font-family: Dela Gothic One;
+    font-size: 44.62px;
+    font-weight: 400;
+
+
+    color: #270B61;
+
+  }
+}
+.book_trip_panel {
+  position: relative;
+
+  margin-top: 30px;
+  margin-bottom: 20px;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: 75px 1px 75px;
+
+  background: #915AFF;
+
+  border-radius: 45px;
+
+  & > div {
+    justify-self: center;
+    align-self: center;
+
+    font-family: Roboto;
+    font-size: 22px;
+    font-weight: 400;
+
+    color: #FFF4F2;
+  }
+}
+.book_trip_panel_low_divider {
+  width: 100%;
+  height: 100%;
+
+  background: #fff;
+
+  grid-column-end: span 5;
+}
+.book_trip_panel_border_divider {
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  width: 1px;
+  height: 100%;
+
+  background: #fff;
+
+  transform: translateX(-50%);
+}
+._1 {
+  left: 20%;
+}
+._2 {
+  left: 40%;
+}
+._3 {
+  left: 60%;
+}
+._4 {
+  left: 80%;
+}
+
+.book_trip_tip {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding-right: 100px;
+}
+.book_trip_tip_wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  h4 {
+    font-family: Dela Gothic One;
+    font-size: 19px;
+    font-weight: 400;
+
+    color: #270B61;
+  }
+}
+.book_trip_tg {
+  width: 90px;
+  height: 90px;
+
+  background: #270B61;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+
+  svg {
+    width: 45px;
+  }
+}
+.book_trip_panel_button {
+  text-align: right;
+  padding-right: 150px;
+
+  button {
+    padding: 10px 20px;
+    font-size: 15px;
+    background: #BA96FF;
+  }
+}

@@ -1,0 +1,36 @@
+.nav {
+  position: fixed;
+  top: 20px;
+  right: 32px;
+
+  display: flex;
+  align-items: center;
+  gap: 20px;
+
+  background: #C9AEFF75;
+
+  border-radius: 43px;
+
+  padding: 14px 30px;
+
+  z-index: 10;
+}
+
+.nav_item {
+  background: #C9AEFF75;
+
+  border-radius: 43px;
+
+  padding: 10px 45px;
+
+  font-family: Dela Gothic One;
+  font-size: 15px;
+  font-weight: 400;
+
+  text-decoration: none;
+
+  text-transform: uppercase;
+}
+.nav_logout_button {
+  background: #270B61;
+}

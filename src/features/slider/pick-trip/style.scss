@@ -1,0 +1,49 @@
+.pick_trip {
+  display: grid;
+  grid-template-columns: 30% 60%;
+  gap: 170px;
+
+
+}
+.pick_trip_lozung {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 120px;
+
+  img {
+    width: 700px;
+  }
+}
+
+.pick_trip_btn {
+  width: 350px;
+  background: #BA96FF;
+}
+.pick_trip_swiper {
+  position: relative;
+  width: 785px;
+  height: 350px;
+
+  overflow: hidden;
+
+  .swiper-pagination {
+    position: absolute !important;
+    bottom: 5px !important;
+  }
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 15px;
+
+    border: 2px solid #270B61;
+
+    background: transparent;
+
+    transition: all .3s;
+
+    opacity: 1;
+  }
+  .swiper-pagination-bullet-active {
+    background: #270B61;
+  }
+}

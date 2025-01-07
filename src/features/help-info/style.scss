@@ -1,0 +1,33 @@
+.help_info {
+  padding: 40px 0;
+
+  background: #FFFFFF;
+
+  .main_layout {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+  }
+}
+
+.help_item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+
+  span, p {
+    font-family: Dela Gothic One;
+    font-size: 15.15px;
+    font-weight: 400;
+
+    color: #270B61;
+  }
+  span {
+    text-transform: uppercase;
+  }
+  p {
+    margin-top: 20px;
+
+    font-family: Roboto;
+  }
+}

@@ -1,0 +1,48 @@
+.best_hotels {
+  padding: 40px 25px;
+
+  background: #FFFFFF;
+
+
+
+  .best_hotels_list {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .main_layout {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+    overflow: hidden;
+  }
+
+  h3 {
+    display: block;
+
+    width: 100%;
+    text-align: right;
+
+    font-family: Dela Gothic One;
+    font-size: 50.95px;
+    font-weight: 400;
+
+    color: #915AFF;
+  }
+
+  .main_layout {
+    padding: 0;
+  }
+
+  .best_hotels_btn {
+    display: block;
+    width: 100%;
+    text-align: center;
+
+    button {
+      background: #BA96FF;
+    }
+  }
+}

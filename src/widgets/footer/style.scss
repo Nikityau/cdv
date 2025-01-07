@@ -1,0 +1,59 @@
+.footer {
+  width: 100%;
+
+  background-position: top;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+
+  padding-bottom: 50px;
+
+  .main_layout {
+    display: flex;
+    align-items: start;
+    gap: 50px;
+
+    & > div {
+      h4 {
+        font-family: Dela Gothic One;
+        font-size: 36.4px;
+        font-weight: 400;
+
+        color: #270B61;
+
+        text-transform: uppercase;
+      }
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    span {
+      font-family: Roboto;
+      font-size: 27.51px;
+      font-weight: 400;
+
+      color: #270B61;
+    }
+  }
+  .footer_last {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    cursor: pointer;
+  }
+}
+
+.footer_tg {
+  width: 141px;
+  height: 141px;
+
+  border-radius: 50%;
+
+  background: #270B61;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
