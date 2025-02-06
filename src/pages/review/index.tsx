@@ -1,15 +1,37 @@
 import './style.scss'
-import {useState} from "react";
+import {useEffect, useState} from "react";
 import Input from "../../shared/ui/input";
 import Stars from "../../shared/ui/stars";
-import {Link} from "react-router-dom";
+import {useNavigate} from "react-router-dom";
 import Button from "../../shared/ui/button";
 
 const Review = () => {
+    const [isReviewSend, setIsReviewSend] = useState(false);
+    const nav = useNavigate();
+
+    useEffect(() => {
+        if (!isReviewSend) return;
+
+        setTimeout(() => {
+            nav('/trips/tours')
+        }, 2000)
+    }, [isReviewSend])
+
     const [name, setName] = useState("");
     const [email, setEmail] = useState("");
     const [review, setReview] = useState<string>('')
     const [rating, setRating] = useState<number>(0);
+
+    if (isReviewSend) {
+        return (
+            <div className={'review_thx'}>
+                <p>
+                    СПАСИБО ЗА ОТЗЫВ,
+                    ЖДЕМ ВАС СНОВА!
+                </p>
+            </div>
+        )
+    }
 
     return (
         <div className={'main_layout review'}>
@@ -33,11 +55,9 @@ const Review = () => {
                     }}
                 />
             </div>
-            <Link to={'/trips/tours'} className={'review_btn'}>
-                <Button>
-                    ОСТАВИТЬ ОТЗЫВ
-                </Button>
-            </Link>
+            <Button onClick={() => setIsReviewSend(true)}>
+                ОСТАВИТЬ ОТЗЫВ
+            </Button>
         </div>
     );
 };

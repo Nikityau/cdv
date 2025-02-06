@@ -4,6 +4,36 @@
   gap: 64px;
 }
 
+.city_trip__book__ok {
+  h3 {
+    font-family: Dela Gothic One;
+    font-size: 45px;
+    font-weight: 400;
+
+    color: #fff;
+  }
+}
+
+.city_trip__book {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  input {
+    background: #ffffff80;
+
+    &::placeholder {
+      color: #270B61;
+    }
+  }
+}
+.city_trip__btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
 .city_trip_hotel {
   width: 100%;
   height: 526px;

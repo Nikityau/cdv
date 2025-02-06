@@ -1,0 +1,1 @@
+export const TG_BOT_LINK = import.meta.env.VITE_TG_BOT_LINK;

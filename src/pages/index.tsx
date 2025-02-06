@@ -21,19 +21,19 @@ const AppRouter = () => {
                 </Route>
                 <Route path={'trips'} element={<AuthCheck/>}>
                     <Route path={''} element={<MainLayout/>}>
-                        <Route path={'tours'} element={<MainPage/>}/>
                         <Route path={''} element={<div className={'main_layout'}><Outlet/></div>}>
                             <Route path={'cities'} element={<CitiesPage/>}/>
                             <Route path={'cities/:id'} element={<CityTripPage/>}/>
                             <Route path={'my-tours'} element={<MyToursPages/>}/>
                             <Route path={'review'} element={<Review/>}/>
                         </Route>
+                        <Route path={'tours'} element={<MainPage/>}/>
 
                         <Route path={''} element={<Navigate to={'tours'}/>}/>
                     </Route>
                 </Route>
 
-                <Route path={''} element={<Navigate to={'/trips'}/>}/>
+                <Route path={''} element={<Navigate to={'/trips/tours'}/>}/>
                 <Route path={'*'} element={<ErrorPage404/>}/>
             </Route>
         </Routes>

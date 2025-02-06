@@ -1,11 +1,12 @@
 import {Swiper, SwiperSlide} from "swiper/react";
-import {Pagination} from 'swiper/modules'
+import {Autoplay, Pagination} from 'swiper/modules'
 import lozung from './assets/lozung.png'
 import Button from "../../../shared/ui/button";
 
 import './style.scss';
 import 'swiper/css';
 import 'swiper/css/pagination';
+import 'swiper/css/autoplay'
 
 import {toursCity} from "../../../pages/cities/data.ts";
 import TourCity from "../../../entities/tour-city";
@@ -23,10 +24,16 @@ const PickTripSlider = () => {
             </div>
             <div>
                 <Swiper
-                    modules={[Pagination]}
+
+                    modules={[Pagination, Autoplay]}
                     slidesPerView={2.5}
                     spaceBetween={10}
                     pagination={true}
+                    loop={true}
+                    autoplay={{
+                        delay: 1000
+                    }}
+
                     className={'pick_trip_swiper'}
                 >
                     {

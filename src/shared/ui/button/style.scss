@@ -14,4 +14,10 @@
 
   outline: none;
   border: none;
+
+  transition: all .3s;
+
+  &:hover {
+    background: #6013F2;
+  }
 }

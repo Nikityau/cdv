@@ -33,7 +33,10 @@ const Subscribe = () => {
                         onChange={setEmail}
                         placeholder={'Ваш e-mail*'}
                     />
-                    <Button>
+                    <Button onClick={() => {
+                        setName('')
+                        setEmail('')
+                    }}>
                         ПОДПИСАТЬСЯ
                     </Button>
                 </div>

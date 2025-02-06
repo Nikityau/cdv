@@ -30,7 +30,14 @@
   text-decoration: none;
 
   text-transform: uppercase;
+
+  transition: all .3s;
+
+  &:hover {
+    background: #c9aeff;
+  }
 }
+
 .nav_logout_button {
   background: #270B61;
 }
