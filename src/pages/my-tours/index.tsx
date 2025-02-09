@@ -11,18 +11,18 @@ const MyToursPages = () => {
             <p>Забронировано 2 тура</p>
             <div className={'my_tours_list'}>
                 {
-                    toursCity.map(t => (
+                    Array.from({ length: 2}).map((_,i) => (
                         <div
-                            key={t.city_title}
+                            key={i}
                             className={'my_tours_tour'}
                         >
                             <TourCity
                                 className={'my_tours_city'}
                                 city_title={''}
-                                city_picture={t.city_picture}
+                                city_picture={toursCity[i].city_picture}
                                 withArrow={false}
                             />
-                            <h5>{t.city_title}</h5>
+                            <h5>{toursCity[i].city_title}</h5>
                             <span>14-18 НОЯБРЯ</span>
                             <span>2 персоны</span>
                             <span className={'my_tours_hotel'}>“СПА-ОТЕЛЬ ХАЯТ”</span>
@@ -34,7 +34,6 @@ const MyToursPages = () => {
                         </div>
                     ))
                 }
-
             </div>
         </div>
     );

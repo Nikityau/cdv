@@ -1,4 +1,4 @@
-import {Navigate, useParams} from "react-router-dom";
+import {Link, Navigate, useParams} from "react-router-dom";
 import {toursCity} from "../cities/data.ts";
 import TourCity from "../../entities/tour-city";
 
@@ -16,12 +16,12 @@ const CityTripPage = () => {
     useEffect(() => {
         if(!isOk) return;
 
-        setTimeout(() => {
+       /* setTimeout(() => {
             setIsOk(false);
             setIsBooking(false);
 
             [setFio, setEmail, setPhone].forEach(cb => cb(''))
-        }, 2000)
+        }, 2000)*/
     }, [isOk])
 
     const [fio, setFio] = useState("");
@@ -46,6 +46,11 @@ const CityTripPage = () => {
                 isOk && (
                     <div className={'city_trip__book__ok'}>
                         <h3>Успешно забронировано</h3>
+                        <Link to={'/trips/my-tours'}>
+                            <Button>
+                                ПЕРЕЙТИ К БРОНИРОВАНИЯМ
+                            </Button>
+                        </Link>
                     </div>
                 )
             }

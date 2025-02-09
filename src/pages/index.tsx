@@ -10,6 +10,7 @@ import CityTripPage from "./city-trip";
 import MyToursPages from "./my-tours";
 import MainPage from "./main";
 import Review from "./review";
+import UserMe from "./me";
 
 const AppRouter = () => {
     return (
@@ -31,6 +32,11 @@ const AppRouter = () => {
 
                         <Route path={''} element={<Navigate to={'tours'}/>}/>
                     </Route>
+                </Route>
+                <Route path={'user'} element={<AuthCheck/>}>
+                    <Route path={'me'} element={<UserMe/>}/>
+
+                    <Route path={''} element={<Navigate to={'me'}/>}/>
                 </Route>
 
                 <Route path={''} element={<Navigate to={'/trips/tours'}/>}/>

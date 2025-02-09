@@ -39,7 +39,7 @@
   textarea {
     margin-top: 10px;
 
-    width: 100%;
+    width: calc(100% - 60px);
     height: 150px;
 
     outline: none;

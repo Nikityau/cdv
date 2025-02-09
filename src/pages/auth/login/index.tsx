@@ -23,6 +23,7 @@ const Login = () => {
     const onSubmit = (data: LogInForm) => {
         console.log(data);
         // TODO: потом сделать
+        localStorage.setItem('user_name', data.email)
         mockAuth()
     }
 

@@ -16,6 +16,7 @@ const Reg = () => {
 
     const onSubmit = (data: FormData) => {
         console.log(data);
+        localStorage.setItem('user_name', data.email)
         // TODO: logic
         mockAuth()
     }

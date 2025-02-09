@@ -41,7 +41,7 @@ const TourCity: FC<TourCityProps> = ({city_title, tour_price, city_picture, clas
                 tour_price &&
                 (
                     <span className={'city_price'}>
-                        {tour_price}
+                        {tour_price} &#x20bd;
                     </span>
                 )
             }

@@ -1,8 +1,26 @@
 import './style.scss'
+import {useEffect, useState} from "react";
 
 const Logo = () => {
+    const [isHide, setIsHide] = useState(false);
+
+    useEffect(() => {
+        window.addEventListener('scroll', (_) => {
+            if(window.scrollY > 100) {
+                setIsHide(true);
+                return;
+            }
+
+            setIsHide(false);
+        })
+    }, [])
+
     return (
-        <div className={"logo"}>
+        <div className={"logo"}
+            style={{
+                display: isHide ? 'none' : 'block',
+            }}
+        >
             <svg width="235" height="117" viewBox="0 0 235 117" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path
                     d="M57.5891 59.3682C57.5891 59.3682 68.9773 79.1947 55.9298 92.5473C38.7381 110.141 13.4594 110.432 13.4594 110.432"
